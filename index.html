@@ -20,7 +20,7 @@
       <a href="#" class="logo">
         <img src="./image/svg/evklid-logo.svg" alt="логотип евклид" loading="lazy">
       </a>
-      <nav class="header-nav nav" tabindex="0">
+      <nav class="header-nav nav">
         <ul class="nav__list list-reset">
           <li class="nav__item">
             <a class="nav__link" href="#about">О нас</a>
@@ -185,7 +185,7 @@
       <div class="container ">
         <div class="footer-content">
           <div class="footer-content__media">
-            <a class="logo footer__logo">
+            <a class="logo footer__logo" href="#">
               <img src="./image/svg/footer-logo.svg" alt="логотип евклид" loading="lazy">
             </a>
             <nav class="footer-nav nav">
@@ -215,7 +215,7 @@
             </nav>
             <ul class="footer-social list-reset">
               <li class="footer-social__item">
-                <a class="footer-social__icon" href="https://ok.ru/" target="_blank">
+                <a class="footer-social__icon" href="https://ok.ru/" target="_blank" aria-label="сайт одноклассники">
                   <svg viewBox="0 0 25 25" fill="#999999" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10.7106 8.32552C10.7106 9.35607 11.546 10.1916 12.5766 10.1916C13.6071 10.1916 14.4426 9.35607 14.4426 8.32552C14.4426 7.29496 13.6071 6.4595 12.5766 6.4595C11.546 6.4595 10.7106 7.29496 10.7106 8.32552Z">
@@ -227,7 +227,7 @@
                 </a>
               </li>
               <li class="footer-social__item">
-                <a class="footer-social__icon" href="https://vk.com/" target="_blank">
+                <a class="footer-social__icon" href="https://vk.ru/" target="_blank" aria-label="сайт вконтакте">
                   <svg viewBox="0 0 25 25" fill="#999999" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_370726_103)">
                       <path
@@ -250,9 +250,9 @@
               <input class="form-content__input footer-form footer-form--state" name="Ф.И.О" type="text"
                 placeholder="Фамилия, имя и&nbsp;отчество*" required>
               <input class="form-content__input footer-form footer-form--state" name="Email" type="email"
-                placeholder="Email*" required>
+                placeholder="Email*" required autocomplete="on">
               <textarea class="form-content__textarea footer-form footer-form--state" name="Сообщение"
-                placeholder="Сообщение"></textarea>
+                placeholder="Сообщение" autocomplete="off"></textarea>
               <div class="form-submit">
                 <button class="form-submit__btn btn-reset  button " type="submit">Отправить данные</button>
                 <label class="form-submit__label">

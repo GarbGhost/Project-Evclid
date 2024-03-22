@@ -301,7 +301,7 @@ img {
 
 .about-inner {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   width: clamp(290px, 100%, 1770px);
   gap: var(--gap);
 }

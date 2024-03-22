@@ -417,16 +417,8 @@ img {
   align-items: center;
   gap: 30px;
 }
-
-.stages-content__column {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: flex-start;
-  max-width: 758px;
-}
-
-.stages-img {
+.stages-content::after {
+  content: "";
   width: 100%;
   max-width: 870px;
   min-height: 460px;
@@ -436,6 +428,14 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.stages-content__column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  max-width: 758px;
 }
 
 .stages__subtitle {

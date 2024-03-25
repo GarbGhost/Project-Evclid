@@ -325,6 +325,10 @@
     overflow-y: hidden;
     white-space: nowrap;
   }
+
+  .form-submit__btn {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 556px) {

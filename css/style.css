@@ -241,10 +241,15 @@ img {
   border-radius: var(--border-radius);
   overflow: hidden;
   background-color: #666666;
-  background-image: url("../image/pictures/hero-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: image-set(
+    url("../image/pictures/hero@1x.webp"),
+    url("../image/pictures/hero@1x.avif"),
+    url("../image/pictures/hero@1x.jpg")
+  );
+ 
 }
 
 .hero__wrapper {
@@ -315,7 +320,11 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../image/pictures/about-bg.webp");
+  background-image: image-set(
+    url("../image/pictures/about-bg.webp"),
+    url("../image/pictures/about-bg.avif"),
+    url("../image/pictures/about-bg.jpg")
+  );
 }
 
 .about-big__wrap {
@@ -422,10 +431,14 @@ img {
   min-height: 460px;
   overflow: hidden;
   border-radius: var(--border-radius);
-  background-image: url("../image/pictures/stages-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: image-set(
+    url("../image/pictures/stages-img.webp"),
+    url("../image/pictures/stages-img.avif"),
+    url("../image/pictures/stages-img.jpg")
+  );
 }
 
 .stages-content__column {

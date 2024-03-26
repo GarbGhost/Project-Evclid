@@ -273,6 +273,10 @@
     overflow-y: hidden;
     white-space: nowrap;
   }
+  
+  .form-submit__btn {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 556px) {
@@ -529,7 +533,7 @@
 
   .form-content__textarea {
     padding: 14px 18px;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   .footer-form--state {

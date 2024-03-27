@@ -247,11 +247,11 @@
             <h2 class="subtitle footer-form__title">Оставить заявку</h2>
             <form class="form-content" action="https://jsonplaceholder.typicode.com/posts" method="post">
               <input class="form-content__input footer-form footer-form--state" name="Ф.И.О" type="text"
-                placeholder="Фамилия, имя и&nbsp;отчество*" required>
+                placeholder="Фамилия, имя и&nbsp;отчество*" aria-label="введите фамилию, имя, отчество" required>
               <input class="form-content__input footer-form footer-form--state" name="Email" type="email"
-                placeholder="Email*" required autocomplete="on">
+                placeholder="Email*" aria-label="введите email" required autocomplete="on">
               <textarea class="form-content__textarea footer-form footer-form--state" name="Сообщение"
-                placeholder="Сообщение" autocomplete="off"></textarea>
+                placeholder="Сообщение" aria-label="введите сообщение" autocomplete="off"></textarea>
               <div class="form-submit">
                 <button class="form-submit__btn btn-reset  button " type="submit">Отправить данные</button>
                 <label class="form-submit__label">

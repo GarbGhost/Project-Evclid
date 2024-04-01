@@ -249,7 +249,6 @@ img {
     url("../image/pictures/hero@1x.avif"),
     url("../image/pictures/hero@1x.jpg")
   );
- 
 }
 
 .hero__wrapper {
@@ -657,7 +656,6 @@ img {
   background-color: var(--color-tundora);
 }
 
-
 .form-content__textarea {
   padding: 21px 24px;
   margin-bottom: 31px;
@@ -687,16 +685,16 @@ img {
   color: var(--color-very-light-grey);
 }
 
+
 .form-content__input:focus::placeholder {
-  text-indent: 100%; 
-  transition: text-indent .3s ease;
+  text-indent: 100%;
+  transition: text-indent 0.3s ease;
 }
 
 .form-content__textarea:focus::placeholder {
   opacity: 0;
-  transition: opacity .3s ease ;
+  transition: opacity 0.3s ease;
 }
-
 
 .footer-form--state:focus-visible {
   background-color: var(--color-dim-grey);
@@ -704,7 +702,7 @@ img {
 }
 
 .footer-form--state:hover::placeholder {
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   background-color: var(--color-dim-grey);
   opacity: 0;
 }

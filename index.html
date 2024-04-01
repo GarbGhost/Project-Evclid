@@ -18,7 +18,7 @@
 <body class="page">
   <header class="header">
     <div class="container header__container">
-      <a href="#" class="logo">
+      <a class="logo" href="#!">
         <img src="./image/svg/evklid-logo.svg" alt="логотип евклид" loading="lazy">
       </a>
       <nav class="header-nav nav">
@@ -37,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <button class="btn-reset header__search" aria-label="кнопка поиска">
+      <button class="btn-reset header__search" aria-label="найти">
         <svg width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="7.56126" height="1.89031"
             transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.5784)" fill="black"></rect>
@@ -51,7 +51,7 @@
   <main>
     <section class="hero">
       <div class="container">
-        <div class="hero-banner" aria-label="баннер с изображением" tabindex="0">
+        <div class="hero-banner" aria-label="изображение высотки с балконами" role="banner">
           <div class="hero__wrapper">
             <h1 class="hero__title">Проектные решения любой сложности</h1>
             <p class="hero__descr">
@@ -84,17 +84,17 @@
           прототип будущего проекта способствует повышению качества экспериментов.
         </p>
         <div class="about-inner">
-          <div class="about-big">
+          <div class="about-big" aria-label="изображен человек в спец. форме с молотком">
             <div class="about-big__wrap">
               <p class="about-big__text">
                 Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке
                 и&nbsp;реализации новых принципов
               </p>
-              <button class="about-btn about-btn--color btn-reset button ">Подробнее</button>
+              <button class="about-btn about-btn--color btn-reset button">Подробнее</button>
             </div>
           </div>
           <div class="about-column">
-            <div class="about-column__small about-column__small--bg-1">
+            <article class="about-column__small about-column__small--bg-1">
               <h2 class="about-column__title">
                 Консультация с&nbsp;широким активом
               </h2>
@@ -102,8 +102,8 @@
                 А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для
                 как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений
               </p>
-            </div>
-            <div class="about-column__small about-column__small--bg-2">
+            </article>
+            <article class="about-column__small about-column__small--bg-2">
               <h2 class="about-column__title">
                 В&nbsp;своём стремлении повысить
               </h2>
@@ -111,7 +111,7 @@
                 Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный
                 эксперимент проверки прогресса профессионального cообщества
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </div>
@@ -149,8 +149,8 @@
         <h2 class="subtitle questions-title">
           Вопросы
         </h2>
-        <ul class="questions-list list-reset">
-          <li class="questions__item">
+        <ul class="questions-list list-reset" role="list">
+          <li class="questions__item" role="listitem">
             <h3 class="questions__title">
               Из&nbsp;чего формируется конечная стоимость проекта?
             </h3>
@@ -214,7 +214,7 @@
             </nav>
             <ul class="footer-social list-reset">
               <li class="footer-social__item">
-                <a class="footer-social__icon" href="https://ok.ru/" target="_blank" aria-label="сайт одноклассники">
+                <a class="footer-social__icon" href="https://ok.ru/" aria-label="сайт одноклассники" target="_blank">
                   <svg viewBox="0 0 25 25" fill="#999999" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M10.7106 8.32552C10.7106 9.35607 11.546 10.1916 12.5766 10.1916C13.6071 10.1916 14.4426 9.35607 14.4426 8.32552C14.4426 7.29496 13.6071 6.4595 12.5766 6.4595C11.546 6.4595 10.7106 7.29496 10.7106 8.32552Z">
@@ -226,7 +226,7 @@
                 </a>
               </li>
               <li class="footer-social__item">
-                <a class="footer-social__icon" href="https://vk.ru/" target="_blank" aria-label="сайт вконтакте">
+                <a class="footer-social__icon" href="https://vk.ru/" aria-label="сайт вконтакте" target="_blank">
                   <svg viewBox="0 0 25 25" fill="#999999" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_370726_103)">
                       <path
@@ -245,18 +245,19 @@
           </div>
           <div class="footer-form">
             <h2 class="subtitle footer-form__title">Оставить заявку</h2>
-            <form class="form-content" action="https://jsonplaceholder.typicode.com/posts" method="post">
-              <input class="form-content__input footer-form footer-form--state" name="Ф.И.О" type="text"
-                placeholder="Фамилия, имя и&nbsp;отчество*" aria-label="введите фамилию, имя, отчество" required>
-              <input class="form-content__input footer-form footer-form--state" name="Email" type="email"
-                placeholder="Email*" aria-label="введите email" required autocomplete="on">
+            <form class="form-content" aria-label="форма" action="https://jsonplaceholder.typicode.com/posts"
+              method="post">
+              <input class="form-content__input footer-form footer-form--state" name="Ф.И.О"
+                placeholder="Фамилия, имя и&nbsp;отчество*" required autocomplete="on">
+              <input class="form-content__input footer-form footer-form--state" name="Email"
+                type="email" placeholder="Email*" required autocomplete="email">
               <textarea class="form-content__textarea footer-form footer-form--state" name="Сообщение"
-                placeholder="Сообщение" aria-label="введите сообщение" autocomplete="off"></textarea>
+                placeholder="Сообщение" autocomplete="off"></textarea>
               <div class="form-submit">
                 <button class="form-submit__btn btn-reset  button " type="submit">Отправить данные</button>
                 <label class="form-submit__label">
-                  <input class="form-submit__check" name="Agreement" type="checkbox" required
-                    aria-label="Принять условия соглашения">
+                  <input class="form-submit__check" name="Agreement"
+                    type="checkbox" required>
                   <span class="form-submit__check-icon">
                     <svg width="10" height="8" viewBox="0 0 10 8" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.94952 1.08233L3.99977 6.03208L1.17135 3.20365" stroke-width="2"></path>

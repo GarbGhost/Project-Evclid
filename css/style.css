@@ -314,6 +314,7 @@ img {
     url("../image/pictures/hero@1x.avif"),
     url("../image/pictures/hero@1x.jpg")
   );
+  background-image: url('../image/pictures/hero@1x.jpg');
 }
 
 .hero__wrapper {
